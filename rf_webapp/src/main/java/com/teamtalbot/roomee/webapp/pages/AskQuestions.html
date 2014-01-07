@@ -1,0 +1,37 @@
+<wicket:extend>
+	<div id="questionsArea">
+	
+	</div>
+	
+	<script src="js/questions.js"></script>
+	<script type="text/template" id="questionGroupTpl">
+	<div class="contentSetting">
+		<h1><%= title %></h1>
+		<% _.each(questions, function(question) { %>
+			<div>
+				<%= question.text %>
+				<% if (question.metaData.type == "text") { %>
+					<input type="text" id="text<%= question.id %>"/>
+				<% } else if (question.metaData.type == "slider") { %>
+					<div id="slider<%= question.id %>"></div>
+				<% } else if (question.metaData.type == "yesno") { %>
+					<form>
+						Yes <input id="yes<%= question.id %>" name="yesno<%= question.id %>" type="radio" value="true"/>
+						No <input id="no<%= question.id %>" name="yesno<%= question.id %>" type="radio" value="false"/>
+					</form>
+				<% } else if (question.metaData.type == "options") { %>
+					<select id="options<%= question.id %>">
+						<option value="english">English</option>
+						<option value="spanish">Spanish</option>
+						<option value="french">French</option>
+					</select>
+				<% } %>
+			</div>
+		<% }); %>
+	</div>
+		<div class="questionButtonSetting">
+		<button id="previousButton" type="button" class="btn"><i class="icon-chevron-left"></i> Previous</button>
+		<button id="continueButton" type="button" class="btn btn-primary"><span id="continueButtonText">Continue</span> <i class="icon-chevron-right"></i></button>
+		</div>
+</script>
+</wicket:extend>

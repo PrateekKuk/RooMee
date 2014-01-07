@@ -1,0 +1,58 @@
+.containerSetting {
+	width:100% !important;
+}
+
+.navBarMargin{
+	margin-bottom:0 !important;
+}
+.topNav{
+	     padding-left: 0px;      
+         padding-right:0px;
+}
+.profileBox{
+	     padding-top:20px;
+	     padding-left: 120px;      
+         padding-right:40px;
+         padding-bottom:20px;
+}
+.contentSetting{
+	     padding-top:20px;
+	     padding-left: 120px;      
+         padding-right:40px;
+         padding-bottom:20px;
+}
+.loginContentSetting{
+	     padding-top:20px;
+	     padding-left: 92px;      
+         padding-right:40px;
+         padding-bottom:20px;
+}
+.registerButtonSetting{
+		 padding-top:20px;
+	     padding-left:320px  !important;    
+         padding-right:40px;
+         padding-bottom:20px;
+}
+.loginButtonSetting{
+		 padding-top:20px;
+	     padding-left:330px  !important;    
+         padding-right:40px;
+         padding-bottom:20px;
+}
+.questionButtonSetting{
+		 padding-top:20px;
+	     padding-left:340px  !important;    
+         padding-right:20px;
+         padding-bottom:20px;
+}
+/* .previousButtonSetting{
+		 padding-top:20px;
+	     padding-left:320px  !important;    
+         padding-right:40px;
+         padding-bottom:20px; */
+}
+.imageSetting{
+		padding-top:-40px;
+		width:100%;
+
+}

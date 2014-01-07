@@ -1,0 +1,23 @@
+<wicket:extend>
+	<div id="loginMessage"></div>
+	<h1 class="loginContentSetting">Sign in</h1>
+	<form wicket:id="loginForm" class="form-horizontal" method="POST">
+		<div class="control-group">
+		    <label class="control-label" for="username">Username</label>
+		    <div class="controls">
+		      <input wicket:id="username" type="text" placeholder="Username">
+		    </div>
+		</div>
+		<div class="control-group">
+		    <label class="control-label" for="password">Password</label>
+		    <div class="controls">
+		      <input wicket:id="password" type="password" placeholder="Password">
+		    </div>
+		</div>
+		 <div class="loginButtonSetting">
+		<button id="loginButton" type="button" class="btn btn-primary">Sign in</button>
+		</div>
+	</form>
+	
+	<script src="js/login.js"></script>
+</wicket:extend>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RooMee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <!-- <style type="text/css">
+       body {
+         padding-left: 40px;      
+         padding-right:40px;
+         padding-bottom:50px;
+      } 
+    </style> -->
+    <link href="css/shared.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"/>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.min.css" rel="stylesheet"/>
+	<link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet"/>
+	
+  	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>                            
+  </head>
+
+  <body>
+
+    <div class="navbar topNav navBarMargin">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="padding-top:20px"class="brand myNavBarText" href="index.html">RooMee</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class = "divider-vertical myNavBar"></li>
+              <li><a  href="index.html">What is <br/> RooMee?</a></li>
+              <li class = "divider-vertical myNavBar"></li>
+              <li class="myNavBar myNavBarText"><a href="explore.html">Explore the <br/>Site</a></li>
+              <li class = "divider-vertical myNavBar"></li>
+            </ul>
+            <form style="padding-top:10px" class="navbar-search pull-left">
+ 				 <input type="text" class="search-query" placeholder="Search by City">
+			</form>
+			<wicket:container wicket:id="signInArea">
+	            <div style="padding-top:10px"class="navbar-form pull-right">
+	              <a href="login.html" class="btn btn-primary">Sign in</a>
+	              <a href="register.html" class="btn btn-link">Register!</a>
+	            </div>
+            </wicket:container>
+            <wicket:container wicket:id="signOutArea">
+	            <div style="padding-top:10px"class="navbar-form pull-right">
+	              <a href="login.html?logout" class="btn btn-link">Sign out</a>
+	            </div>
+            </wicket:container>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container containerSetting">
+
+      <wicket:child/>
+
+      <hr>
+
+      <footer>
+        <p>&copy; RooMee 2013</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+	<script src="js/shared.js"></script>
+	
+	<script type="text/template" id="errorTpl">
+		<div class="alert alert-error">
+			<% _.each(errors, function(error) { %>
+				<p><%= error %></p>
+			<% }); %>
+		</div>
+	</script>
+	<div wicket:id="hiddenuser" style="display:none">churley310</div>
+  </body>
+</html>
